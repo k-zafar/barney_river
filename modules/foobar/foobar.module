@@ -1,0 +1,75 @@
+<?php
+
+/**
+ * @file
+ * Provides hook implementations for the foobar module.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function foobar_menu() {
+  // The paths given here need to match the ones in foobar.routing.yml exactly.
+  $items['admin/foobar'] = array(
+    'title' => 'Foobar',
+    'description' => 'This is the demo foobar page.',
+    // The name of the route from foobar.routing.yml
+    'route_name' => 'foobar',
+  );
+  $items['admin/foobar/form'] = array(
+    'title' => 'Form Example',
+    'description' => 'An example of a basic form.',
+    'route_name' => 'foobar.form',
+  );
+  $items['admin/foobar/systemconfigformbase'] = array(
+    'title' => 'SystemConfigFormBase Example',
+    'description' => 'An example of a basic system configuration form using the SystemConfigFormBase class.',
+    'route_name' => 'foobar.systemconfigformbase',
+  );
+  $items['admin/foobar/drupal_get_form'] = array(
+    'title' => 'drupal_get_form() Example',
+    'description' => 'An example of a form using the drupal_get_form().',
+    'route_name' => 'foobar.drupal_get_form',
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_field_info().
+ */
+function foobar_field_info() {
+  return array(
+    'foobar' => array(
+      'label' => t('Foobar'),
+      'description' => t('This field stores foobar information in the database.'),
+      'default_widget' => 'foobar_default',
+      'default_formatter' => 'foobar',
+      'field item class' => 'Drupal\foobar\Type\FoobarItem',
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_info_alter().
+ */
+/*function foobar_field_info_alter(&$info) {
+  if (module_exists('text')) {
+    $info['foobar']['default_formatter'] = 'text_plain';
+  }
+}*/
+
+/**
+ * Implements hook_field_is_empty().
+ */
+function foobar_field_is_empty($item, $field) {
+  return !isset($item['value']) || $item['value'] === '';
+}
+
+/**
+ * Implements hook_field_formatter_info_alter().
+ */
+function foobar_field_formatter_info_alter(&$info) {
+  if (isset($info['text_plain'])) {
+    $info['text_plain']['field_types'][] = 'text_plain';
+  }
+}

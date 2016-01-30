@@ -1,0 +1,6 @@
+{
+    "name": "drupal/barney_river_utilities",
+    "description": "This is composer.json for Utilities Opertion For Barney River site module.",
+    "type": "drupal-module",
+    "license": "GPL-2.0+"
+}

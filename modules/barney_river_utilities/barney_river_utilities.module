@@ -1,0 +1,21 @@
+<?php
+
+
+use Drupal\Component\Utility\Unicode;
+use Drupal\Core\Block\BlockPluginInterface;
+
+
+function barney_river_utilities_block_view_alter(array &$build, BlockPluginInterface $block) {
+  // We'll search for the string 'uppercase'.
+  $definition = $block->getPluginDefinition();
+  if ((!empty($build['#configuration']['label']) && stristr($build['#configuration']['label'], 'uppercase')) || (!empty($definition['subject']) && stristr($definition['subject'], 'uppercase'))) {
+    // This will uppercase the block title.
+    $build['#configuration']['label'] = Unicode::strtoupper($build['#configuration']['label']);
+
+  }
+  // echo '<pre>';
+  // //print_r($build);
+  // print_r($block);
+  // echo '</pre>';
+  //exit;
+}
