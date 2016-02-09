@@ -38,7 +38,7 @@ class TeamMemberBlock extends BlockBase {
     foreach($nodes as $node){
               $class = ($ind==1) ? 'active' : '';
 
-              $output .= '<li class="' . $class . '"><a href="#team_member_tab' . $ind . '" data-toggle="tab">'.$node->title->value.'</a><br>'.$node->get('field_designation')->value.'</li>';
+              $output .= '<li class="' . $class . '"><a href="#team_member_tab' . $ind . '" data-toggle="tab">'.$node->title->value.'</a>'.$node->get('field_designation')->value.'</li>';
               $ind++;
     }
     $ind = 1;
