@@ -8,6 +8,8 @@ namespace Drupal\barney_river_utilities\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 use Drupal\image\Entity\ImageStyle;
 
+
+
 /**
  * Provides a 'Team Member' Block
  *
@@ -31,14 +33,15 @@ class TeamMemberBlock extends BlockBase {
         ->condition('type', 'team_member')
         ->sort('field_order', 'ASC');
     $nids = $query->execute();
-    $nodes = entity_load_multiple('node', $nids);
+    $nodes = node_load_multiple($nids);
+    //$nodes = entity_load_multiple('node', $nids);
     $ind = 1;
     $output = '<div class="tabbable tabs-left">
                 <ul class="nav nav-tabs">';
     foreach($nodes as $node){
               $class = ($ind==1) ? 'active' : '';
 
-              $output .= '<li class="' . $class . '"><a href="#team_member_tab' . $ind . '" data-toggle="tab">'.$node->title->value.'</a><br>'.$node->get('field_designation')->value.'</li>';
+              $output .= '<li class="' . $class . '"><a href="#team_member_tab' . $ind . '" data-toggle="tab">'.$node->title->value.'</a>'.$node->get('field_designation')->value.'</li>';
               $ind++;
     }
     $ind = 1;
@@ -47,12 +50,12 @@ class TeamMemberBlock extends BlockBase {
              foreach($nodes as $node){
                 $class = ($ind==1) ? 'active' : '';
                 $path = $node->field_image->entity->getFileUri();
-                $image_url = ImageStyle::load('thumbnail')->buildUrl($path);
-				        $output .= '<div class="tab-pane ' . $class . '" id="team_member_tab' . $ind . '"><img src="'.$image_url.'" alt="some_text">'.$node->get('body')->value.'   </div>';
+                $url = ImageStyle::load('thumbnail')->buildUrl($path);
+                $output .= '<div class="tab-pane ' . $class . '" id="team_member_tab' . $ind . '"><img src="' . $url . '" alt="">' . $node->get('body')->value . '</div>';
                 $ind++;
-              }
+            }
             $output .= '</div>
-            </div>';
+          </div>';
 
         return array(
           '#type' => 'markup',
