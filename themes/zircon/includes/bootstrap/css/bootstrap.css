@@ -9765,3 +9765,19 @@ animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both!important;
   border-color: #013c5b !important;
   font-weight:bold;
 }
+#views_slideshow_cycle_div_home_page_slideshow-block_1_0,
+#views_slideshow_cycle_div_home_page_slideshow-block_1_1,
+#views_slideshow_cycle_div_home_page_slideshow-block_1_2{ width: 100% !important; height: auto !important;}
+
+
+
+@media only screen and (max-device-width: 768px) {
+#views_slideshow_cycle_teaser_section_home_page_slideshow-block_1 { width: 100% !important; height: 300px;
+	}
+}
+
+@media only screen and (max-device-width: 480px) {
+#views_slideshow_cycle_teaser_section_home_page_slideshow-block_1 { width: 100% !important; height: 90px;
+	}
+
+}
