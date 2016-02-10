@@ -2715,6 +2715,7 @@ select[multiple].input-lg {
   .form-horizontal .form-group-lg .control-label {
     padding-top: 14.3px;
   }
+
 }
 @media (min-width: 768px) {
   .form-horizontal .form-group-sm .control-label {
@@ -6366,7 +6367,7 @@ button.close {
 	vertical-align: middle;
 }
 .phone{ background:url(../../../images/phone-icon.png) top center no-repeat;}
-.email{ background:url(../../../images/mail-icon.png) top center no-repeat; margin-left:10px;}
+.email{ background:url(../../../images/mail-icon.png) top center no-repeat; }
 .address{ background:url(../../../images/map-icon.png) top center no-repeat;}
 .fax{ background:url(../../../images/fax-icon.png) top center no-repeat; margin-left:10px;}
 
@@ -6420,6 +6421,7 @@ background-color: transparent !important;
 
  
 }
+
 #block-showteammembers-2  .nav > li > a:hover, .nav > li > a:focus {  background-color: transparent !important; border:none; background:url(../../../images/arrow-right.png) right center no-repeat;}
 #block-showteammembers-2 . tabs-left > .nav-tabs > li > a:hover, 
 #block-showteammembers-2  .tabs-left > .nav-tabs > li > a:focus {
@@ -9747,3 +9749,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   width: 100% !important;
 }
 .tab-content img {width: 204px;}
+body
+{
+overflow-x:hidden;
+}
+#block-whoweare li a:hover
+{
+animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both!important;
+  transform: translate3d(0, 0, 0)!important;
+  backface-visibility: hidden!important;
+  perspective: 1000px!important;
+}
+.nav-tabs > li > a{border:none;}
