@@ -36,16 +36,25 @@ class HomepageSlideshowBlock extends BlockBase {
     $nodes = node_load_multiple($nids);
 
     $ind = 0;
-    $output_slide = $output_slide_bullet = $output = '';
+    $output_slide = $output_slide_bullet = $output = ''; 
+    $logo=theme_get_setting('logo', 'zircon');
     foreach($nodes as $node){
         $class = ($ind==0) ? 'active' : '';
         $output_slide_bullet .= '<li data-target="#myCarousel" data-slide-to="' . $ind . '" class="' . $class . '"></li>';
         $path = $node->field_image->entity->url();
-        //$url = ImageStyle::load('')->buildUrl($path);
+        if($node->get('field_add_logo')->value == 1){
+            $output_slide_add_logo = '<div class="logo_on_slider">
+                                   <img src="'.$logo['url'].'" alt="Logo">
+                                      </div>';
+        }
         $output_slide .= '<div class="item ' . $class . '">
-                            <img src="' . $path . '" alt="">
-                          </div>';
+                           
+                           <img src="' . $path . '" alt="">
+							             ' . $output_slide_add_logo . '
+                          </div>';          
         $ind++;
+
+
     }
     $output = '<div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
