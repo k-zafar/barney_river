@@ -6355,7 +6355,7 @@ button.close {
 .phone{ background:url(../../../images/phone-icon.png) top center no-repeat;}
 .email{ background:url(../../../images/mail-icon.png) top center no-repeat; }
 .address{ background:url(../../../images/map-icon.png) top center no-repeat;}
-.fax{ background:url(../../../images/fax-icon.png) top center no-repeat; margin-left:10px;}
+.fax{ background:url(../../../images/fax-icon.png) top center no-repeat; }
 
 #block-managementteam h2{ text-align: center; font-size:2em; font-weight:500; text-transform:uppercase; color:#023c5b;
   padding-bottom: 15px;
@@ -9801,20 +9801,83 @@ color: #023c5b!important;
 {
     margin-top: 20px;
 }
+#footer .remove-padding {
+  padding: 0;
+  margin: 0;
+}
+#footer .phone-div
+{
+width: 134px;
+}
+#footer .fax-div
+{
+width: 141px;
+ padding: 0;
+  margin: 0;
+}
+@media (max-width: 768px) {
+ #address
+{
+margin-left: 37px;
+}
+
+}
+
+@media (max-width: 768px)
+{
+.carousel-indicators li {
+   
+      height: 10px!important;
+      width: 10px!important;
+       position: relative;
+    top: 17px;
+   }
+   .carousel-indicators li.active{
+   
+      height: 10px!important;
+      width: 10px!important;
+   }
+}
+/*slider css*/
+
+.carousel-indicators li {
+   
+      height: 15px;
+      width: 15px;
+    background-color: #899194;
+ border:none;
+ border-radius:0px;
+ margin: 10px!important;
+}
+
+.carousel-indicators .active {
+   height: 15px;
+    width: 15px;
+    background-color: #fff;
+ border:none;
+}
+@media (max-width: 991px)
+{
+.navbar-toggle {
+    position: relative;
+    bottom: 54px;
+}
+}
 /* Code written by Hassan */
 .who-we-are-bodytext{
  font-size: 20px;
     font-weight: 500;
- color: #023d5b;
+ color:#5d5d5d;
 }
 #block-views-block-who-we-are-block-1
 {
  text-align:center;
 }
 #who_we_are_header_text{
- font-size: 25px;
+ font-size: 14px;
  font-family: 'Roboto', light;
  margin-bottom:23px;
+ color:#5d5d5d;
 }
 #block-views-block-who-we-are-block-1 h2{ text-align: center; font-size:45px; color: #023c5b;}
 #block-views-block-who-we-are-block-1 .btn-primary {
@@ -9830,5 +9893,15 @@ color: #023c5b!important;
 {
 background-color: #023c5b;
 color: #ffffff;
+}
+.logo_on_slider
+{
+	width:171px;
+	height:57px;
+	margin-top:0px;
+}
+#block-views-block-who-we-are-block-1 .view-footer
+{
+	clear:both
 }
 /*End*/
