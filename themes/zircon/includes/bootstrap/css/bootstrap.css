@@ -9783,15 +9783,35 @@ animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both!important;
 }
 
 /*Header partion*/
+#main-menu .menu
+{
+    margin-right: 42px;
+}
 #main-menu .menu li a
 {
 text-transform:uppercase;
 }
+
 .site-logo img
 {
 width: 160px;
+margin-left: 82px;
 }
+
 #block-whoweare h2 
 {
  color: #023c5b;
+}
+/* About us */
+h1.page-title
+{
+color: #013c5b;
+}
+#block-showteammembers-2 .tabs-left > .nav-tabs .active > a{
+color: #023c5b!important;
+}
+
+#footer .block
+{
+    margin-top: 20px;
 }
