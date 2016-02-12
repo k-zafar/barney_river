@@ -6228,20 +6228,6 @@ button.close {
 #block-footerright{ text-align: right; }
 #block-barneyriver h2{ font-size:20px; margin:0 0 5px 0; color:#5d5d5d; font-weight:400;}
 
-#block-whoweare h2{ text-align: center; font-size:45px;}
-#block-whoweare ul{ margin:30px 0; overflow:hidden; padding:0;}
-#block-whoweare li{ list-style:none;}
-#block-whoweare li a{ font-size:20px; font-weight:500;}
-#block-whoweare li a img{ display:block; margin:0 auto 20px; }
-#block-whoweare .btn-primary {
-  font-size: 23px;
-  font-weight: 100;
-  padding: 8px 30px;
-}
-
-
-
-
 /*# sourceMappingURL=bootstrap.css.map */
 .tabs-below > .nav-tabs,
 .tabs-right > .nav-tabs,
@@ -9815,3 +9801,34 @@ color: #023c5b!important;
 {
     margin-top: 20px;
 }
+/* Code written by Hassan */
+.who-we-are-bodytext{
+ font-size: 20px;
+    font-weight: 500;
+ color: #023d5b;
+}
+#block-views-block-who-we-are-block-1
+{
+ text-align:center;
+}
+#who_we_are_header_text{
+ font-size: 25px;
+ font-family: 'Roboto', light;
+ margin-bottom:23px;
+}
+#block-views-block-who-we-are-block-1 h2{ text-align: center; font-size:45px; color: #023c5b;}
+#block-views-block-who-we-are-block-1 .btn-primary {
+  font-size: 23px;
+  font-weight: 100;
+  padding: 8px 30px;
+  border-color: #023c5b;
+    background-color: #ffffff;
+    color: #023c5b;
+    border: 1px solid #023c5b;
+}
+#block-views-block-who-we-are-block-1 .btn-primary:hover
+{
+background-color: #023c5b;
+color: #ffffff;
+}
+/*End*/
