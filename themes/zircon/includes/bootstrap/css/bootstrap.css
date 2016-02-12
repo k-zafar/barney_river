@@ -6355,7 +6355,7 @@ button.close {
 .phone{ background:url(../../../images/phone-icon.png) top center no-repeat;}
 .email{ background:url(../../../images/mail-icon.png) top center no-repeat; }
 .address{ background:url(../../../images/map-icon.png) top center no-repeat;}
-.fax{ background:url(../../../images/fax-icon.png) top center no-repeat; margin-left:10px;}
+.fax{ background:url(../../../images/fax-icon.png) top center no-repeat;}
 
 #block-managementteam h2{ text-align: center; font-size:2em; font-weight:500; text-transform:uppercase; color:#023c5b;
   padding-bottom: 15px;
@@ -9832,3 +9832,17 @@ background-color: #023c5b;
 color: #ffffff;
 }
 /*End*/
+#footer .remove-padding {
+  padding: 0;
+  margin: 0;
+}
+#footer .phone-div
+{
+width: 134px;
+}
+#footer .fax-div
+{
+width: 141px;
+ padding: 0;
+  margin: 0;
+}
