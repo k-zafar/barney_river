@@ -6355,7 +6355,11 @@ button.close {
 .phone{ background:url(../../../images/phone-icon.png) top center no-repeat;}
 .email{ background:url(../../../images/mail-icon.png) top center no-repeat; }
 .address{ background:url(../../../images/map-icon.png) top center no-repeat;}
+<<<<<<< HEAD
 .fax{ background:url(../../../images/fax-icon.png) top center no-repeat; }
+=======
+.fax{ background:url(../../../images/fax-icon.png) top center no-repeat;}
+>>>>>>> fa87c0b01dcd4c3e5a37d3415b3c0327bd434b2b
 
 #block-managementteam h2{ text-align: center; font-size:2em; font-weight:500; text-transform:uppercase; color:#023c5b;
   padding-bottom: 15px;
@@ -9894,6 +9898,7 @@ margin-left: 37px;
 background-color: #023c5b;
 color: #ffffff;
 }
+<<<<<<< HEAD
 .logo_on_slider
 {
 	width:171px;
@@ -9905,3 +9910,20 @@ color: #ffffff;
 	clear:both
 }
 /*End*/
+=======
+/*End*/
+#footer .remove-padding {
+  padding: 0;
+  margin: 0;
+}
+#footer .phone-div
+{
+width: 134px;
+}
+#footer .fax-div
+{
+width: 141px;
+ padding: 0;
+  margin: 0;
+}
+>>>>>>> fa87c0b01dcd4c3e5a37d3415b3c0327bd434b2b
