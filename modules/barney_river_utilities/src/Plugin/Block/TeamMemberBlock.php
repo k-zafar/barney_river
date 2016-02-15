@@ -50,7 +50,7 @@ class TeamMemberBlock extends BlockBase {
              foreach($nodes as $node){
                 $class = ($ind==1) ? 'active' : '';
                 $path = $node->field_image->entity->getFileUri();
-                $url = ImageStyle::load('thumbnail')->buildUrl($path);
+                $url = ImageStyle::load('person_picture')->buildUrl($path);
                 $output .= '<div class="tab-pane ' . $class . '" id="team_member_tab' . $ind . '"><img src="' . $url . '" alt="">' . $node->get('body')->value . '</div>';
                 $ind++;
             }
