@@ -757,16 +757,14 @@
   }
 }
 
-
-
 .navbar-toggle {
+  background-color: transparent;
   bottom: 54px;
   height: 32px;
   position: absolute;
-  right: 20px;
-  top: 10px;
+  right: 19px;
+  top: -59px;
   width: 32px;
-  background-color: transparent;
 }
 
 
