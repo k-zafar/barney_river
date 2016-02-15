@@ -89,6 +89,10 @@
   }
 }
 @media (max-width: 991px) {
+.site-logo img {
+  margin-left:0;
+}
+	
   /* */
   /*  */
   /* line 12, ../sass/includes/_include.scss */
@@ -226,136 +230,7 @@
 
   /* main menu */
   /* line 119, ../sass/responsive.scss */
-  .navbar-toggle {
-    display: block;
-    float: right;
-    background: #fff;
-    border-color: #e7e8e9;
-    margin: 4px 0 0 5px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-  }
-  /* line 128, ../sass/responsive.scss */
-  .navbar-toggle:hover, .navbar-toggle:focus {
-    background: #dddddd;
-  }
-  /* line 131, ../sass/responsive.scss */
-  .navbar-toggle .icon-bar {
-    background: #333;
-  }
-
-  /* line 135, ../sass/responsive.scss */
-  #main-menu {
-    max-height: 20000px;
-    margin-bottom: 0;
-  }
-  /* line 138, ../sass/responsive.scss */
-  #main-menu .container {
-    height: auto;
-    position: relative;
-    background: none;
-    margin-bottom: 0;
-  }
-  /* line 143, ../sass/responsive.scss */
-  #main-menu .container .block {
-    float: none;
-  }
-  /* line 147, ../sass/responsive.scss */
-  #main-menu .region-main-menu {
-    margin-bottom: 15px;
-  }
-  /* line 150, ../sass/responsive.scss */
-  #main-menu .navbar-collapse {
-    max-height: 200000px;
-  }
-  /* line 152, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container {
-    height: 0;
-    overflow: hidden;
-    background: #fff;
-  }
-  /* line 156, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container ul.menu {
-    float: none;
-    padding: 5px 15px;
-  }
-  /* line 159, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container ul.menu li {
-    border-left: none;
-    float: none;
-    border-top: 1px solid #dadada;
-    border-top-style: dotted;
-  }
-  /* line 164, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container ul.menu li a {
-    display: block;
-    color: #555555;
-    border-radius: 0;
-    padding: 10px 0;
-  }
-  /* line 170, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container ul.menu li .is-active {
-    color: #c01700;
-    background: none;
-  }
-  /* line 175, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container ul.menu li.menu-item--active-trail > a {
-    background: none;
-    color: #c01700;
-  }
-  /* line 182, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container ul.menu li:hover a, #main-menu .navbar-collapse .container ul.menu li:focus a {
-    background: none;
-    color: #c01700;
-    text-decoration: none;
-  }
-  /* line 188, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container ul.menu li:first-child {
-    border-top: none;
-  }
-  /* line 191, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container ul.menu li ul.menu {
-    position: static;
-    left: auto;
-    top: auto;
-    width: auto;
-    display: block;
-    border: none;
-    background: none;
-  }
-  /* line 199, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container ul.menu li ul.menu li {
-    border-top: 1px solid #dadada;
-    border-top-style: dotted;
-  }
-  /* line 202, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container ul.menu li ul.menu li a {
-    background: none;
-    color: #555555;
-    padding: 10px 0;
-  }
-  /* line 207, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container ul.menu li ul.menu li a:hover, #main-menu .navbar-collapse .container ul.menu li ul.menu li a:focus {
-    color: #c01700;
-  }
-  /* line 211, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container ul.menu li ul.menu li .is-active {
-    color: #c01700;
-  }
-  /* line 215, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container ul.menu li ul.menu li .menu-item--active-trail > a {
-    color: #c01700;
-  }
-  /* line 223, ../sass/responsive.scss */
-  #main-menu .navbar-collapse .container ul.menu .menu-item--expanded > a:before {
-    color: #555555;
-  }
-  /* line 231, ../sass/responsive.scss */
-  #main-menu .navbar-collapse.in .container {
-    height: auto;
-    margin-bottom: 15px;
-  }
-
+ 
   /* line 239, ../sass/responsive.scss */
   .sidebar .our-products-list .views-row {
     padding-bottom: 20px;
@@ -406,6 +281,41 @@
   }
 }
 @media (max-width: 767px) {
+	
+#header .col-md-8 { position: absolute; padding:0; top:72px; left:0; width:100%; z-index:999999}
+#main-menu .menu {
+  float: left;
+  width:100%;
+  padding:0;
+  margin:0;
+}	
+#main-menu .menu li {
+  float: left;
+  width:100%;
+}
+
+#main-menu .menu li a {
+  border-top: none;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  line-height: 100%;
+  text-align:right;
+  padding: 20px 15px;
+  background-color:#1d506d;
+  border:none;
+}	
+#main-menu .menu li a.is-active {
+  border-top: none;
+  background-color:#033c5a;
+ 
+}
+#main-menu .menu li a:hover{ border:none;}	
+.navbar-toggle{ display:block;}	
+	
+.site-logo img {
+  margin-left:0;
+}
 
 #block-showteammembers-2 .tab-content { float:none; width:100%;}
 #block-showteammembers-2 .tabs-left > .nav-tabs { float:none; width:100%;}
@@ -846,3 +756,18 @@
     margin-top: -27px;
   }
 }
+
+
+
+.navbar-toggle {
+  bottom: 54px;
+  height: 32px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 32px;
+  background-color: transparent;
+}
+
+
+

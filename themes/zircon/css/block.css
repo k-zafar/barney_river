@@ -84,6 +84,7 @@
 /* line 32, ../sass/block.scss */
 #header .block-system-branding-block {
   float: left;
+  margin-bottom:15px;
 }
 /* line 35, ../sass/block.scss */
 #header .search-block-form {
