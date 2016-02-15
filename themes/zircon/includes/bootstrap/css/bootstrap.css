@@ -9781,7 +9781,7 @@ text-transform:uppercase;
 
 .site-logo img
 {
-width: 160px;
+width: 160px !important;
 margin-left: 82px;
 }
 
@@ -9848,7 +9848,7 @@ margin-left: 0px;
 	width: 100%!important;
 
  }
- 
+
 }
 /*slider css*/
 
@@ -9952,7 +9952,7 @@ width: 134px;
   margin: 0;
 }
 .btn-btt
-{ 
+{
 display: none!important;
 }
 .footer_text_right
@@ -9992,7 +9992,7 @@ width:40%!important;
  {
      margin-left: 33px!important;
  }
- 
+
 #footer .container{
   padding-left: 10px;
   padding-right: 10px;
