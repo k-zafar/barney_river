@@ -9939,7 +9939,7 @@ width: 134px;
 }
 #footer .fax-div {
   width: 141px;
-  padding: 0;
+ padding-left: 4px;
   margin: 0;
 }
 .btn-btt
@@ -9967,4 +9967,12 @@ font-weight:300;
 {
 font-size: 16px!important;
 font-weight: 300!important;
+}
+#block-barneyriver
+{
+    width: 70%!important;
+}
+#block-footerright
+{
+width:30%!important;
 }
