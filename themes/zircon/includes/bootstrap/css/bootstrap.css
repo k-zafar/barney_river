@@ -9815,10 +9815,14 @@ width: 141px;
  padding: 0;
   margin: 0;
 }
+#footer h2
+{
+    margin-left: 21px;
+}
 @media (max-width: 768px) {
  #address
 {
-margin-left: 37px;
+margin-left: 0px;
 }
 
 }
@@ -9863,6 +9867,19 @@ margin-left: 37px;
     bottom: 54px;
 }
 }
+.btn-primary
+{
+text-transform: uppercase;
+}
+.right
+{
+display:none;
+}
+.left
+{
+display:none;
+}
+
 /* Code written by Hassan */
 .who-we-are-bodytext{
  font-size: 20px;
