@@ -44,14 +44,20 @@ class TeamMemberBlock extends BlockBase {
               $output .= '<li class="' . $class . '"><a href="#team_member_tab' . $ind . '" data-toggle="tab">' . $node->title->value . '<span>' . $node->get('field_designation')->value . '</span></a></li>';
               $ind++;
     }
+
     $ind = 1;
             $output .= '</ul>
             <div class="tab-content">';
              foreach($nodes as $node){
                 $class = ($ind==1) ? 'active' : '';
-                $path = $node->field_image->entity->getFileUri();
-                $url = ImageStyle::load('person_picture')->buildUrl($path);
-                $output .= '<div class="tab-pane ' . $class . '" id="team_member_tab' . $ind . '"><div class="col-md-3"><img src="' . $url . '" alt=""></div><div class="col-md-9">' . $node->get('body')->value . '</div></div>';
+                if(is_object($node->field_image->entity)){
+                  $path = $node->field_image->entity->getFileUri();
+                  $url = ImageStyle::load('person_picture')->buildUrl($path);
+                  $tab_content_html = '<div class="col-md-3"><img src="' . $url . '" alt=""></div><div class="col-md-9">' . $node->get('body')->value . '</div>';
+                }else{
+                  $tab_content_html = '<div>' . $node->get('body')->value . '</div>';
+                }
+                $output .= '<div class="tab-pane ' . $class . '" id="team_member_tab' . $ind . '"> ' . $tab_content_html . ' </div>';
                 $ind++;
             }
             $output .= '</div>
