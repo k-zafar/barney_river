@@ -6355,11 +6355,7 @@ button.close {
 .phone{ background:url(../../../images/phone-icon.png) top center no-repeat;}
 .email{ background:url(../../../images/mail-icon.png) top center no-repeat; }
 .address{ background:url(../../../images/map-icon.png) top center no-repeat;}
-<<<<<<< HEAD
-.fax{ background:url(../../../images/fax-icon.png) top center no-repeat; }
-=======
 .fax{ background:url(../../../images/fax-icon.png) top center no-repeat;}
->>>>>>> fa87c0b01dcd4c3e5a37d3415b3c0327bd434b2b
 
 #block-managementteam h2{ text-align: center; font-size:2em; font-weight:500; text-transform:uppercase; color:#023c5b;
   padding-bottom: 15px;
@@ -9788,7 +9784,7 @@ width: 160px;
 margin-left: 82px;
 }
 
-#block-whoweare h2 
+#block-whoweare h2
 {
  color: #023c5b;
 }
@@ -9830,14 +9826,14 @@ margin-left: 37px;
 @media (max-width: 768px)
 {
 .carousel-indicators li {
-   
+
       height: 10px!important;
       width: 10px!important;
        position: relative;
     top: 17px;
    }
    .carousel-indicators li.active{
-   
+
       height: 10px!important;
       width: 10px!important;
    }
@@ -9845,7 +9841,7 @@ margin-left: 37px;
 /*slider css*/
 
 .carousel-indicators li {
-   
+
       height: 15px;
       width: 15px;
     background-color: #899194;
@@ -9898,7 +9894,7 @@ margin-left: 37px;
 background-color: #023c5b;
 color: #ffffff;
 }
-<<<<<<< HEAD
+
 .logo_on_slider
 {
 	width:171px;
@@ -9909,21 +9905,16 @@ color: #ffffff;
 {
 	clear:both
 }
-/*End*/
-=======
-/*End*/
+
 #footer .remove-padding {
   padding: 0;
   margin: 0;
 }
-#footer .phone-div
-{
+#footer .phone-div {
 width: 134px;
 }
-#footer .fax-div
-{
-width: 141px;
- padding: 0;
+#footer .fax-div {
+  width: 141px;
+  padding: 0;
   margin: 0;
 }
->>>>>>> fa87c0b01dcd4c3e5a37d3415b3c0327bd434b2b
