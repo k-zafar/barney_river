@@ -6208,7 +6208,7 @@ button.close {
 .site-name{ display:none;}
 .header .container{ padding:0 !important;}
 
-#footer{ background-color:#eeeeee; border-bottom: solid 10px #023c5b; padding:50px 0; border-top:solid 1px #b2b2b2; margin-bottom: 0 !important;}
+#footer{ background-color:#eeeeee; border-bottom: solid 10px #023c5b; padding:20px 0 30px 0; border-top:solid 1px #b2b2b2; margin-bottom: 0 !important;}
 #main-menu .menu{ float:right;}
 #main-menu .menu li{ float:left; }
 #main-menu .menu li a{border-top:solid 5px transparent; font-size:18px; color:#013c5b; line-height:100%; display:block; padding:20px 15px;}
@@ -6391,7 +6391,8 @@ button.close {
   border: solid 1px #c8c8c8;
 }
 
-#block-showteammembers-2 .tab-pane img{ float:left; margin: 0 15px 15px 0;}
+#block-showteammembers-2 .tab-pane .col-md-3{ padding: 0;}
+#block-showteammembers-2 .tab-pane .col-md-9{ padding: 0 0 0 15px;}
 
 #block-showteammembers-2 .nav-tabs li{ border:none; border-bottom: solid 1px #c8c8c8; }
 #block-showteammembers-2 .nav-tabs .active{ border:none; background:url(../../../images/arrow-right.png) right center no-repeat;}
@@ -9841,6 +9842,13 @@ margin-left: 0px;
       height: 10px!important;
       width: 10px!important;
    }
+ #block-footerright
+ {
+     margin-left: 20px;
+	width: 100%!important;
+
+ }
+ 
 }
 /*slider css*/
 
@@ -9866,6 +9874,7 @@ margin-left: 0px;
     position: relative;
     bottom: 54px;
 }
+
 }
 .btn-primary
 {
@@ -9951,6 +9960,9 @@ display: none!important;
 font-size:14px;
 font-weight:300;
 }
+.footer_text_right a:first-child {
+  padding-right: 4px;
+}
 /*about us*/
 .text-center
 {
@@ -9970,9 +9982,22 @@ font-weight: 300!important;
 }
 #block-barneyriver
 {
-    width: 70%!important;
+    width: 60%!important;
 }
 #block-footerright
 {
-width:30%!important;
+width:40%!important;
+}
+.text_foot
+ {
+     margin-left: 33px!important;
+ }
+#footer .container{
+  padding-left: 32px;
+  padding-right: 32px;
+}
+#block-views-block-who-we-are-block-1 .view-content
+{
+	width: 80%;
+    margin-left: 10%;
 }

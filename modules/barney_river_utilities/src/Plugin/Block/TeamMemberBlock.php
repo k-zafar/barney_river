@@ -51,7 +51,7 @@ class TeamMemberBlock extends BlockBase {
                 $class = ($ind==1) ? 'active' : '';
                 $path = $node->field_image->entity->getFileUri();
                 $url = ImageStyle::load('person_picture')->buildUrl($path);
-                $output .= '<div class="tab-pane ' . $class . '" id="team_member_tab' . $ind . '"><img src="' . $url . '" alt="">' . $node->get('body')->value . '</div>';
+                $output .= '<div class="tab-pane ' . $class . '" id="team_member_tab' . $ind . '"><div class="col-md-3"><img src="' . $url . '" alt=""></div><div class="col-md-9">' . $node->get('body')->value . '</div></div>';
                 $ind++;
             }
             $output .= '</div>
