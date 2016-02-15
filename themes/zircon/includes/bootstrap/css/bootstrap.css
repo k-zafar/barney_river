@@ -6396,7 +6396,8 @@ button.close {
 #block-showteammembers-2 .nav-tabs li{ border:none; border-bottom: solid 1px #c8c8c8; }
 #block-showteammembers-2 .nav-tabs .active{ border:none; background:url(../../../images/arrow-right.png) right center no-repeat;}
 #block-showteammembers-2 .nav-tabs li a span{ display:block; font-size:16px; font-weight:normal;}
-#block-showteammembers-2 .nav-tabs li a { color:#5d5d5d; font-size:20px; font-weight:700;}
+#block-showteammembers-2 .nav-tabs li a { color:#5d5d5d; font-size:20px; font-weight:400;}
+#block-showteammembers-2 .nav-tabs li a  span{text-transform: uppercase;}
 #block-showteammembers-2 .tabs-left > .nav-tabs .active > a,
 #block-showteammembers-2 .tabs-left > .nav-tabs .active > a:hover,
 #block-showteammembers-2 .tabs-left > .nav-tabs .active > a:focus {
@@ -9913,6 +9914,7 @@ display:none;
 background-color: #023c5b;
 color: #ffffff;
 }
+
 .logo_on_slider{
   height: 57px;
   left: 50%;
@@ -9943,4 +9945,26 @@ width: 134px;
 .btn-btt
 { 
 display: none!important;
+}
+.footer_text_right
+{
+font-size:14px;
+font-weight:300;
+}
+/*about us*/
+.text-center
+{
+    font-size: 20px!important;
+    font-weight: 300!important;
+}
+#block-managementteam .field--name-body
+{
+	font-size: 20px!important;
+    font-weight: 300!important;
+	margin-bottom:20px;
+}
+.tab-content p
+{
+font-size: 16px!important;
+font-weight: 300!important;
 }
