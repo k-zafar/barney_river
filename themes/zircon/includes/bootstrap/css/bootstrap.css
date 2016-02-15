@@ -9992,9 +9992,10 @@ width:40%!important;
  {
      margin-left: 33px!important;
  }
+ 
 #footer .container{
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 #block-views-block-who-we-are-block-1 .view-content
 {
