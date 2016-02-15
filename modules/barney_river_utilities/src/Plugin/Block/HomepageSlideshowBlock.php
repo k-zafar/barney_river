@@ -36,9 +36,10 @@ class HomepageSlideshowBlock extends BlockBase {
     $nodes = node_load_multiple($nids);
 
     $ind = 0;
-    $output_slide = $output_slide_bullet = $output = ''; 
+    $output_slide_add_logo = $output_slide = $output_slide_bullet = $output = ''; 
     $logo=theme_get_setting('logo', 'zircon');
     foreach($nodes as $node){
+        $output_slide_add_logo="";
         $class = ($ind==0) ? 'active' : '';
         $output_slide_bullet .= '<li data-target="#myCarousel" data-slide-to="' . $ind . '" class="' . $class . '"></li>';
         $path = $node->field_image->entity->url();
@@ -50,8 +51,11 @@ class HomepageSlideshowBlock extends BlockBase {
         $output_slide .= '<div class="item ' . $class . '">
                            
                            <img src="' . $path . '" alt="">
-							             ' . $output_slide_add_logo . '
+'. $output_slide_add_logo.'
                           </div>';          
+
+                      /*     $output_slide_add_logo */
+                          
         $ind++;
 
 
