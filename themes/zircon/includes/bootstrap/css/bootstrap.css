@@ -9894,7 +9894,7 @@ display:none;
  color:#5d5d5d;
  padding-bottom: 22px!important;
  padding-top: 10px!important;
- font-size: 15px!important;
+ font-size: 16px!important;
  font-weight: 400!important;
 }
 #block-views-block-who-we-are-block-1
@@ -10010,30 +10010,95 @@ width:40%!important;
 /*css by usman 16/2*/
 @media (min-width: 320px)
 {
+.copy
+{
+    width: 300px!important;
+}
+#footer .region {
+    padding: 0 0px!important;}
+#footer .container{
+    width: 570px;
+}
+.city{
+position: relative;
+left: 38px;
+}
+.fax
+{
+margin-left: -5px;
+}
+#block-managementteam h2::before
+{
+margin-left: 46%!important;
+}
 .site-logo img
 {
-margin-top: -8px!important;
+margin-top: -7px!important;
 }
 }
 @media (min-width: 360px) {
+
+#block-managementteam h2::before
+{
+margin-left: 40%!important;
+}
 .site-logo img
 {
-margin-top: -8px!important;
+margin-top: -7px!important;
 }
 }
 @media (min-width:768px) {
+.email
+{
+margin-left: -8px;
+}
+.city {
+    position: relative;
+    left: 0px;
+}
+#footer .container{
+    width: 900px;
+}
+#block-footerright
+{
+text-align: left!important;
+}
+#block-managementteam h2::before
+{
+margin-left: 17%!important;
+}
 .menu
 {
 margin-top: -72px;
 }
 }
+@media (min-width: 800px)
+{
+#block-footerright {
+    text-align: left !important;
+    position: relative!important;
+    top: 13px!important;}
+
+}
 @media (min-width: 980px) {
+.copy
+{
+  margin-left: 54px;  
+}
+#block-footerright
+{
+text-align: right!important;
+}
 .menu
 {
 margin-top: -72px;
 }
 }
 @media (min-width: 1280px) {
+#block-managementteam h2::before
+{
+margin-left: 10%!important;
+}
 .menu
 {
 margin-top: 0px;
