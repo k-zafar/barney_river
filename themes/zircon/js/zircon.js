@@ -35,5 +35,21 @@
     }
   };
 })(jQuery, Drupal);
+jQuery(document).ready(function(){
+  jQuery(".navbar-toggle").click(function(){
+    if(jQuery( "span" ).hasClass( "fa-times" ))
+    {
+      jQuery(".fa-times").hide();
+      jQuery(".icon-bar").show();
+       jQuery('.fa-times').removeClass('fa-times').addClass('new_class');
+    }
+    else
+    {
+      jQuery(".icon-bar").hide();
+      jQuery( ".navbar-toggle" ).append( "<span class='fa  fa-times'></span>" );
+      jQuery('.new_class').remove();
+    }
 
+  });
+});
 

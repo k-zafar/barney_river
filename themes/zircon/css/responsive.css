@@ -288,7 +288,9 @@
   width:100%;
   padding:0;
   margin:0;
-}	
+ 
+}
+
 #main-menu .menu li {
   float: left;
   width:100%;
@@ -302,15 +304,19 @@
   line-height: 100%;
   text-align:right;
   padding: 20px 15px;
-  background-color:#1d506d;
+  background-color:#033c5a;
   border:none;
 }	
+#main-menu:first-child li a
+{
+border-bottom:1px solid #34627c;
+}
 #main-menu .menu li a.is-active {
   border-top: none;
-  background-color:#033c5a;
+ 
  
 }
-#main-menu .menu li a:hover{ border:none;}	
+#main-menu .menu li a:hover{ border:none; background-color:#1d506d;}	
 .navbar-toggle{ display:block;}	
 	
 .site-logo img {

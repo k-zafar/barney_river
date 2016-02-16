@@ -10002,3 +10002,40 @@ width:40%!important;
 	width: 80%;
     margin-left: 10%;
 }
+.fa-times{
+  font-size: 35px;
+  color: #023c5b;
+  margin-top:-9px;
+}
+/*css by usman 16/2*/
+@media (min-width: 320px)
+{
+.site-logo img
+{
+margin-top: -8px!important;
+}
+}
+@media (min-width: 360px) {
+.site-logo img
+{
+margin-top: -8px!important;
+}
+}
+@media (min-width:768px) {
+.menu
+{
+margin-top: -72px;
+}
+}
+@media (min-width: 980px) {
+.menu
+{
+margin-top: -72px;
+}
+}
+@media (min-width: 1280px) {
+.menu
+{
+margin-top: 0px;
+}
+}
