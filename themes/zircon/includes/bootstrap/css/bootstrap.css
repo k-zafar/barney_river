@@ -9798,9 +9798,8 @@ color: #013c5b;
 color: #023c5b!important;
 }
 
-#footer .block
-{
-    margin-top: 20px;
+#footer .block {
+  color: #999999;
 }
 #footer .remove-padding {
   padding: 0;
@@ -9974,6 +9973,7 @@ font-weight:300;
 	font-size: 20px!important;
     font-weight: 300!important;
 	margin-bottom:20px;
+	text-align:center;
 }
 .tab-content p
 {
@@ -9982,11 +9982,13 @@ font-weight: 300!important;
 }
 #block-barneyriver
 {
-    width: 60%!important;
+  float: left;
+  width: 60%;
 }
-#block-footerright
-{
-width:40%!important;
+#block-footerright {
+  float: left;
+  width:40%;
+  text-align: right;
 }
 .text_foot
  {
@@ -9994,8 +9996,9 @@ width:40%!important;
  }
 
 #footer .container{
-  padding-left: 10px;
-  padding-right: 10px;
+  width: 100%;
+  padding-left: 12%;
+  padding-right: 11%;
 }
 #block-views-block-who-we-are-block-1 .view-content
 {
@@ -10008,20 +10011,18 @@ width:40%!important;
   margin-top:-9px;
 }
 /*css by usman 16/2*/
-@media (min-width: 320px)
-{
+
+@media (min-width: 320px){
+
 .copy
 {
     width: 300px!important;
 }
 #footer .region {
     padding: 0 0px!important;}
-#footer .container{
-    width: 570px;
-}
-.city{
-position: relative;
-left: 38px;
+
+#city{
+padding-left:36px;
 }
 .fax
 {
@@ -10036,6 +10037,24 @@ margin-left: 46%!important;
 margin-top: -7px!important;
 }
 }
+
+@media (max-width: 480px){
+.logo_on_slider  img {
+  max-width: 50%;
+}
+.logo_on_slider {
+  height: 23px;
+  left: 50%;
+  margin-left: -44.5px;
+  margin-top: -13px;
+  position: absolute;
+  top: 50%;
+  width: 85.5px;
+  z-index: 99999;
+}
+
+}
+
 @media (min-width: 360px) {
 
 #block-managementteam h2::before
@@ -10056,13 +10075,8 @@ margin-left: -8px;
     position: relative;
     left: 0px;
 }
-#footer .container{
-    width: 900px;
-}
-#block-footerright
-{
-text-align: left!important;
-}
+
+
 #block-managementteam h2::before
 {
 margin-left: 17%!important;
@@ -10072,35 +10086,43 @@ margin-left: 17%!important;
 margin-top: -72px;
 }
 }
-@media (min-width: 800px)
+@media (min-width: 800px) {
+.phone, .email, .address, .fax {
+    margin-right: 0px;}
+#city
 {
-#block-footerright {
-    text-align: left !important;
-    position: relative!important;
-    top: 13px!important;}
-
+padding-left:0px;
+}
+#footer .container {
+    width: 100%;
+    padding-left: 0%;
+padding-right: 3%;}
 }
 @media (min-width: 980px) {
+#footer .container {
+    width: 100%;
+    padding-left: 8%;
+padding-right: 7%;}
+.phone, .email, .address, .fax {
+    margin-right: 7px;
+}
 .copy
 {
-  margin-left: 54px;  
+  margin-left: 54px;
 }
-#block-footerright
-{
-text-align: right!important;
-}
+
 .menu
 {
 margin-top: -72px;
 }
 }
-@media (min-width: 1280px) {
-#block-managementteam h2::before
-{
-margin-left: 10%!important;
-}
-.menu
-{
-margin-top: 0px;
+@media (min-width: 1280px){
+  .menu {
+    margin-top: 0px;
+  }
+  #footer .container {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 7%;
 }
 }

@@ -36,7 +36,7 @@ class HomepageSlideshowBlock extends BlockBase {
     $nodes = node_load_multiple($nids);
 
     $ind = 0;
-    $output_slide_add_logo = $output_slide = $output_slide_bullet = $output = ''; 
+    $output_slide_add_logo = $output_slide = $output_slide_bullet = $output = '';
     $logo=theme_get_setting('logo', 'zircon');
     foreach($nodes as $node){
         $output_slide_add_logo="";
@@ -45,26 +45,21 @@ class HomepageSlideshowBlock extends BlockBase {
         $path = $node->field_image->entity->url();
         if($node->get('field_add_logo')->value == 1){
             $output_slide_add_logo = '<div class="logo_on_slider">
-                                   <img src="'.$logo['url'].'" alt="Logo">
+                                   <img src="themes/zircon/images/logo-white.png" alt="Logo">
                                       </div>';
         }
         $output_slide .= '<div class="item ' . $class . '">
-                           
+
                            <img src="' . $path . '" alt="">
 '. $output_slide_add_logo.'
-                          </div>';          
+                          </div>';
 
-                      /*     $output_slide_add_logo */
-                          
         $ind++;
-
-
     }
+    $output_slide_bullet_wrap = ($ind == 1) ? '<ol class="carousel-indicators">' . $output_slide_bullet . '</ol>' : '';
     $output = '<div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  ' . $output_slide_bullet . '
-                </ol>
+                  ' . $output_slide_bullet_wrap . '
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
