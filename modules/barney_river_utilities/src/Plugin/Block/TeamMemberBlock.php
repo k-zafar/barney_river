@@ -63,7 +63,7 @@ class TeamMemberBlock extends BlockBase {
             $output .= '</div>
           </div>';
 
-          $output = '<div class="tabcordion">
+          $output_temp = '<div class="tabcordion">
   <ul class="nav nav-tabs">
     <li class="active"><a data-target=".home">Home</a></li>
     <li><a data-target=".profile">Profile</a></li>
