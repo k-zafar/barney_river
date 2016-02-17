@@ -56,7 +56,7 @@ class HomepageSlideshowBlock extends BlockBase {
 
         $ind++;
     }
-    $output_slide_bullet_wrap = ($ind == 1) ? '<ol class="carousel-indicators">' . $output_slide_bullet . '</ol>' : '';
+    $output_slide_bullet_wrap = ($ind > 1) ? '<ol class="carousel-indicators">' . $output_slide_bullet . '</ol>' : '';
     $output = '<div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                   ' . $output_slide_bullet_wrap . '
