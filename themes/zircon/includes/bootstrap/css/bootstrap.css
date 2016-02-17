@@ -6218,7 +6218,7 @@ button.close {
 .box_shadow, #main-menu .container, #slideshow .container, #featured .container, #main .container, #panel_first .container, #panel_second .container {
   box-shadow: none !important;
 }
-#main-menu .menu  { margin-bottom:0;}
+#main-menu .menu  { margin-bottom:0; margin-top: 0;}
 #main-menu .menu .menu-item {
 
   padding-top: 0 !important;
@@ -10114,9 +10114,6 @@ margin-top: -72px;
 }
 }
 @media (min-width: 1280px){
-  .menu {
-    margin-top: 0;
-  }
 
   #footer .container {
     width: 100%;
