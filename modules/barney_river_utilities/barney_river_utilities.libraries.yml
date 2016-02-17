@@ -1,0 +1,14 @@
+tabcordion:
+  remote: https://github.com/aexmachina/tabcordion
+  version: 1.0.6
+  license:
+      name: MIT
+      gpl-compatible: true
+  js:
+    /libraries/tabcordion/tabcordion.js: {}
+
+
+tabcordion_hook:
+  version: 1.x
+  js:
+    js/tabcordion.js: {}
