@@ -1,7 +1,7 @@
 (function ($, Drupal) {
 
   "use strict";
-  
+
   Drupal.behaviors.zircon = {
     attach: function (context, settings) {
       $('.btn-btt').smoothScroll({speed: 1000});
@@ -31,11 +31,12 @@
           else {
             $('.btn-btt').hide();
           }
-      });      
+      });
     }
   };
 })(jQuery, Drupal);
 jQuery(document).ready(function(){
+  jQuery('#block-barneyriver, #block-footerright').addClass('col-lg-6 col-md-6 col-sm-6');
   jQuery(".navbar-toggle").click(function(){
     if(jQuery( "span" ).hasClass( "fa-times" ))
     {
