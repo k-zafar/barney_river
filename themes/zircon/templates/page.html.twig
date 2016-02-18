@@ -2,32 +2,32 @@
 <a name="Top" id="Top"></a>
 <header id="header" class="header" role="header">
   <div class="container">
-<div class="col-md-4">   
-     {{ page.header }}
-</div>   
-<div class="col-md-8">  
+    <div class="row">
+      <div class="col-md-4">
+           {{ page.header }}
+      </div>
+      <div class="col-md-8">
 
-  {% if page.main_menu %}
-    <nav id="main-menu" class="navbar navbar-default" role="navigation">	
-  		  <div class="collapse navbar-collapse" id="main-menu-inner">
-            {{ page.main_menu }}	
-        </div>
-    </nav>
-  {% endif %}
-   
-   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu-inner">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+        {% if page.main_menu %}
+          <nav id="main-menu" class="navbar navbar-default" role="navigation">
+        		  <div class="collapse navbar-collapse" id="main-menu-inner">
+                  {{ page.main_menu }}
+              </div>
+          </nav>
+        {% endif %}
 
- 
-  </div>  
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu-inner">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+    </div>
   </div>
 </header>
 
-  
+
 
   {% if page.slideshow %}
     <section id="slideshow" class="slideshow">
@@ -59,19 +59,19 @@
         {{ page.help }}
       </div>
     </section>
-  {% endif %}    
+  {% endif %}
 
   <section id="main" class="main" role="main">
     <a id="main-content"></a>
     <div class="container">
       <div class="row">
-        
+
         {% if page.sidebar_first %}
           <aside class="sidebar-first sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12" role="complementary">
             {{ page.sidebar_first }}
           </aside>
         {% endif %}
-		
+
         <div class="content col-lg-{{ page.main_content_width }} col-md-{{ page.main_content_width }} col-sm-12 col-xs-12">
           {{ page.highlighted }}
 
@@ -112,7 +112,7 @@
       </div>
     </section>
   {% endif %}
-    
+
   {% if page.panel_second_1 or page.panel_second_2 or page.panel_second_3 or page.panel_second_4 %}
     <section id="panel_second" class="panel_second">
       <div class="container">
@@ -133,7 +133,7 @@
       </div>
     </section>
   {% endif %}
-  
+
   {% if breadcrumb %}
     <section id="breadcrumb" class="breadcrumb">
       <div class="container">
@@ -141,7 +141,7 @@
       </div>
     </section>
   {% endif %}
-  <a href="#Top" class="btn-btt" title="Back to Top" style="display: block;"></a>          
+  <a href="#Top" class="btn-btt" title="Back to Top" style="display: block;"></a>
 
   {% if page.footer %}
     <footer id="footer" class="footer" role="contentinfo">
