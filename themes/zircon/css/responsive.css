@@ -450,11 +450,10 @@ border-bottom:1px solid #34627c;
   }
 
   /* footer */
-  /* line 359, ../sass/responsive.scss */
-   #footer .region { padding:0 20px;}
   
 #block-footerright {
- text-align:left; 
+ text-align:left;
+ margin-top: 15px;
 }  
   #footer .block {
     float: none;

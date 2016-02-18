@@ -1,34 +1,29 @@
 <div class="page">
-<a name="Top" id="Top"></a>
-<header id="header" class="header" role="header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-           {{ page.header }}
-      </div>
-      <div class="col-md-8">
-
-        {% if page.main_menu %}
-          <nav id="main-menu" class="navbar navbar-default" role="navigation">
-        		  <div class="collapse navbar-collapse" id="main-menu-inner">
-                  {{ page.main_menu }}
+  <a name="Top" id="Top"></a>
+  <header id="header" class="header" role="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          {{ page.header }}
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          {% if page.main_menu %}
+            <nav id="main-menu" class="navbar navbar-default" role="navigation">
+              <div class="collapse navbar-collapse" id="main-menu-inner">
+                {{ page.main_menu }}
               </div>
-          </nav>
-        {% endif %}
-
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu-inner">
+            </nav>
+          {% endif %}
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu-inner">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-</header>
-
-
-
+  </header>
   {% if page.slideshow %}
     <section id="slideshow" class="slideshow">
       <div class="container-fluid">
@@ -36,7 +31,6 @@
       </div>
     </section>
   {% endif %}
-
   {% if page.featured %}
     <section id="featured" class="featured">
       <div class="container">
@@ -44,7 +38,6 @@
       </div>
     </section>
   {% endif %}
-
   {% if messages %}
     <section id="messages" class="messages">
       <div class="container">
@@ -52,7 +45,6 @@
       </div>
     </section>
   {% endif %}
-
   {% if page.help %}
     <section id="help" class="help">
       <div class="container">
@@ -60,95 +52,83 @@
       </div>
     </section>
   {% endif %}
-
   <section id="main" class="main" role="main">
     <a id="main-content"></a>
     <div class="container">
       <div class="row">
-
         {% if page.sidebar_first %}
           <aside class="sidebar-first sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12" role="complementary">
             {{ page.sidebar_first }}
           </aside>
         {% endif %}
-
         <div class="content col-lg-{{ page.main_content_width }} col-md-{{ page.main_content_width }} col-sm-12 col-xs-12">
           {{ page.highlighted }}
-
           {{ title_prefix }}
           {% if title %}
             <h1>{{ title }}</h1>
           {% endif %}
           {{ title_suffix }}
-
           {{ tabs }}
-
           {% if action_links %}
-            <nav class="action-links">{{ action_links }}</nav>
-          {% endif %}
-
-          {{ page.content }}
-
-          <!--{{ feed_icons }}-->
-        </div>
-
-        {% if page.sidebar_second %}
-          <aside class="sidebar-second sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12" role="complementary">
-            {{ page.sidebar_second }}
-          </aside>
+          <nav class="action-links">{{ action_links }}</nav>
         {% endif %}
+        {{ page.content }}
+        <!--{{ feed_icons }}-->
+      </div>
+      {% if page.sidebar_second %}
+        <aside class="sidebar-second sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12" role="complementary">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% if page.panel_first_1 %}
+  <section id="panel_first" class="panel_first">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          {{ page.panel_first_1 }}
+        </div>
       </div>
     </div>
   </section>
-
-  {% if page.panel_first_1 %}
-    <section id="panel_first" class="panel_first">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            {{ page.panel_first_1 }}
-          </div>
+{% endif %}
+{% if page.panel_second_1 or page.panel_second_2 or page.panel_second_3 or page.panel_second_4 %}
+  <section id="panel_second" class="panel_second">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          {{ page.panel_second_1 }}
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          {{ page.panel_second_2 }}
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          {{ page.panel_second_3 }}
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          {{ page.panel_second_4 }}
         </div>
       </div>
-    </section>
-  {% endif %}
-
-  {% if page.panel_second_1 or page.panel_second_2 or page.panel_second_3 or page.panel_second_4 %}
-    <section id="panel_second" class="panel_second">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            {{ page.panel_second_1 }}
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            {{ page.panel_second_2 }}
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            {{ page.panel_second_3 }}
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            {{ page.panel_second_4 }}
-          </div>
-        </div>
-      </div>
-    </section>
-  {% endif %}
-
-  {% if breadcrumb %}
-    <section id="breadcrumb" class="breadcrumb">
-      <div class="container">
-        {{ breadcrumb }}
-      </div>
-    </section>
-  {% endif %}
-  <a href="#Top" class="btn-btt" title="Back to Top" style="display: block;"></a>
-
-  {% if page.footer %}
-    <footer id="footer" class="footer" role="contentinfo">
-      <div class="container">
+    </div>
+  </section>
+{% endif %}
+{% if breadcrumb %}
+  <section id="breadcrumb" class="breadcrumb">
+    <div class="container">
+      {{ breadcrumb }}
+    </div>
+  </section>
+{% endif %}
+<a href="#Top" class="btn-btt" title="Back to Top" style="display: block;"></a>
+{% if page.footer %}
+  <footer id="footer" class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
         {{ page.footer }}
       </div>
-    </footer>
-  {% endif %}
-
+    </div>
+  </footer>
+{% endif %}
 </div>
