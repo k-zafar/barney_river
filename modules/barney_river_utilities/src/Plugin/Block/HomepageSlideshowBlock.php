@@ -43,9 +43,10 @@ class HomepageSlideshowBlock extends BlockBase {
         $class = ($ind==0) ? 'active' : '';
         $output_slide_bullet .= '<li data-target="#myCarousel" data-slide-to="' . $ind . '" class="' . $class . '"></li>';
         $path = $node->field_image->entity->url();
-        if($node->get('field_add_logo')->value == 1){
+        if($node->field_add_logo->entity){
+          $logo_path = explode("public://", $node->field_add_logo->entity->uri->value);
             $output_slide_add_logo = '<div class="logo_on_slider">
-                                   <img src="themes/zircon/images/logo-white.png" alt="Logo">
+                                   <img src="sites/default/files/'.$logo_path[1].'" alt="Logo">
                                       </div>';
         }
         $output_slide .= '<div class="item ' . $class . '">
