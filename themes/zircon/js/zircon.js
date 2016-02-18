@@ -36,7 +36,8 @@
   };
 })(jQuery, Drupal);
 jQuery(document).ready(function(){
-  jQuery('#block-barneyriver, #block-footerright').addClass('col-lg-6 col-md-6 col-sm-6');
+  jQuery('#block-barneyriver').addClass('col-lg-8 col-md-8 col-sm-8 col-xs-12');
+  jQuery('#block-footerright').addClass('col-lg-4 col-md-4 col-sm-4 col-xs-12')
   jQuery(".navbar-toggle").click(function(){
     if(jQuery( "span" ).hasClass( "fa-times" ))
     {
