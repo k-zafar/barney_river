@@ -448,19 +448,26 @@ border-bottom:1px solid #34627c;
   #main .contact-message-feedback-form .form-email {
     width: 230px;
   }
-
+.accordion-inner {
+  float: left;
+  width: 100%;
+  padding-top: 10px;
+}
   /* footer */
+}
   
 #block-footerright {
  text-align:left;
- margin-top: 15px;
+ margin-top: 25px;
 }  
   #footer .block {
     float: none;
     width: 100%;
     margin-bottom: 10px;
-
   }
+#footer {
+  padding-bottom: 0px;
+}
   /* line 364, ../sass/responsive.scss */
   #footer .block p {
     margin: 0;

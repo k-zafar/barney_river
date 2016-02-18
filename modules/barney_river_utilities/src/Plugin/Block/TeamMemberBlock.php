@@ -38,11 +38,11 @@ class TeamMemberBlock extends BlockBase {
     $ind = 1;
     $output = '<div class="tabbable tabs-left tabcordion">
                 <ul class="nav nav-tabs">';
-    foreach($nodes as $node){
+    foreach($nodes as $node){     
               $class = ($ind==1) ? 'active' : '';
 
               $output .= '<li class="' . $class . '"><a data-target="#team_member_tab' . $ind . '" data-toggle="tab">' . $node->title->value . '<span>' . $node->get('field_designation')->value . '</span></a></li>';
-              $ind++;
+              $ind++;                                
     }
 
     $ind = 1;
@@ -53,7 +53,7 @@ class TeamMemberBlock extends BlockBase {
                 if(is_object($node->field_image->entity)){
                   $path = $node->field_image->entity->getFileUri();
                   $url = ImageStyle::load('person_picture')->buildUrl($path);
-                  $tab_content_html = '<div class="col-md-3"><img src="' . $url . '" alt=""></div><div class="col-md-9">' . $node->get('body')->value . '</div>';
+                  $tab_content_html = '<div class="row"><div class="col-md-3"><img src="' . $url . '" alt=""></div><div class="col-md-9">' . $node->get('body')->value . '</div> </div>';
                 }else{
                   $tab_content_html = '<div>' . $node->get('body')->value . '</div>';
                 }
