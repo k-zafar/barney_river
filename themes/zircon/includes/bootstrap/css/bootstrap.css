@@ -10004,7 +10004,7 @@ display:none;
 .tabcordion.accordion ul.nav li.accordion-group img {
   margin: 10px 0px;
 }
-#block-showteammembers-2 li.active .accordion-heading {
+#block-showteammembers-2 li .accordion-heading.active {
   background: url("../../../images/minus.png") no-repeat right top;
   width: 100%;
   float: left;

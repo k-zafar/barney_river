@@ -34,24 +34,32 @@
       });
     }
   };
-})(jQuery, Drupal);
-jQuery(document).ready(function(){
-  jQuery('#block-barneyriver').addClass('col-lg-8 col-md-8 col-sm-7 col-xs-12');
-  jQuery('#block-footerright').addClass('col-lg-4 col-md-4 col-sm-5 col-xs-12')
-  jQuery(".navbar-toggle").click(function(){
-    if(jQuery( "span" ).hasClass( "fa-times" ))
-    {
-      jQuery(".fa-times").hide();
-      jQuery(".icon-bar").show();
-       jQuery('.fa-times').removeClass('fa-times').addClass('new_class');
-    }
-    else
-    {
-      jQuery(".icon-bar").hide();
-      jQuery( ".navbar-toggle" ).append( "<span class='fa  fa-times'></span>" );
-      jQuery('.new_class').remove();
-    }
+  jQuery(document).ready(function(){
+    if ($('#block-showteammembers-2 li').hasClass('active')) {
+      $('#block-showteammembers-2 li').removeClass('remove');
+    };
+    $('#block-showteammembers-2 li').each(function(){
+      $(this).click(function(){
+        $(this).find('.accordion-heading').toggleClass('active');
+      });
+    });
+    $('#block-barneyriver').addClass('col-lg-8 col-md-8 col-sm-7 col-xs-12');
+    $('#block-footerright').addClass('col-lg-4 col-md-4 col-sm-5 col-xs-12')
+    $(".navbar-toggle").click(function(){
+      if($( "span" ).hasClass( "fa-times" ))
+      {
+        $(".fa-times").hide();
+        $(".icon-bar").show();
+         $('.fa-times').removeClass('fa-times').addClass('new_class');
+      }
+      else
+      {
+        $(".icon-bar").hide();
+        $( ".navbar-toggle" ).append( "<span class='fa  fa-times'></span>" );
+        $('.new_class').remove();
+      }
 
+    });
   });
-});
+})(jQuery, Drupal);
 
