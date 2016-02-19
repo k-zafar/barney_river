@@ -10102,6 +10102,7 @@ input[type="password"] {
     width: 100%;
     color: #023d5b;
     font-weight: bold;
+    cursor: pointer;
     background: url("../../../images/plus.png") no-repeat right center;
   }
     #block-views-block-team-members-block-mobile-block-1 .title.active {
