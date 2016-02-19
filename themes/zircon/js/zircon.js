@@ -43,6 +43,10 @@
     }
   };
   jQuery(document).ready(function(){
+    var site_title = $('title').text().split(' | ');
+    if (site_title[0].length == 0) {
+      $('title').text(site_title[1]);
+    };
     $('#block-views-block-team-members-block-mobile-block-1 .view-content .views-row .group-footer').hide();
     $('#block-views-block-team-members-block-mobile-block-1 .view-content .views-row').each(function(){
       var title = $(this).find('.title');
