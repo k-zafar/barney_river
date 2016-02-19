@@ -32,6 +32,14 @@
             $('.btn-btt').hide();
           }
       });
+      var repl = jQuery("#block-homepageslideshow .carousel-inner .item > img");
+      repl.each(function(i, elem) {
+        var img = jQuery(elem);
+        var div = jQuery("<div />").css({
+          background: "url(" + img.attr("src") + ") no-repeat"
+        });
+        img.replaceWith(div);
+      });
     }
   };
   jQuery(document).ready(function(){
