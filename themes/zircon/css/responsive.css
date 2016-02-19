@@ -280,194 +280,17 @@
     margin-top: -35px;
   }
 }
-@media (max-width: 767px) {
-	
-#header .col-md-8 { position: absolute; padding:0; top:72px; left:0; width:100%; z-index:999999}
-#main-menu .menu {
-  float: left;
-  width:100%;
-  padding:0;
-  margin:0;
- 
-}
 
-#main-menu .menu li {
-  float: left;
-  width:100%;
-}
-
-#main-menu .menu li a {
-  border-top: none;
-  color: #fff;
-  display: block;
-  font-size: 18px;
-  line-height: 100%;
-  text-align:right;
-  padding: 20px 15px;
-  background-color:#033c5a;
-  border:none;
-}	
-#main-menu:first-child li a
-{
-border-bottom:1px solid #34627c;
-}
-#main-menu .menu li a.is-active {
-  border-top: none;
- 
- 
-}
-#main-menu .menu li a:hover{ border:none; background-color:#1d506d;}	
-.navbar-toggle{ display:block;}	
-	
-.site-logo img {
-  margin-left:0;
-}
-
-#block-showteammembers-2 .tab-content { float:none; width:100%;}
-#block-showteammembers-2 .tabs-left > .nav-tabs { float:none; width:100%;}
-#block-showteammembers-2 .tab-pane img{ max-width:100%;}
-	
-#block-whoweare li { margin-bottom:32px;}
-  /* */
-  /*  */
-  /* line 12, ../sass/includes/_include.scss */
-  .box_shadow {
-    box-shadow: 0 0 5px #ccc;
-    -webkit-box-shadow: 0 0 5px #ccc;
-  }
-
-  /* line 16, ../sass/includes/_include.scss */
-  .border_radius {
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-  }
-
-  /* line 21, ../sass/includes/_include.scss */
-  .font_oswald {
-    font-family: 'oswaldregular';
-  }
-
-  /* BUTTON */
-  /* line 27, ../sass/includes/_include.scss */
-  .form-actions .form-submit {
-    margin: 0 10px 10px 0;
-    border: none;
-    padding: 8px 20px;
-    color: #fff;
-    background: #c01700;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    cursor: pointer;
-  }
-  /* line 36, ../sass/includes/_include.scss */
-  .form-actions .form-submit:hover, .form-actions .form-submit:focus {
-    background-color: #555555;
-  }
-
-  /* line 41, ../sass/includes/_include.scss */
-  .font_awesome {
-    display: inline-block;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-  }
-
-  /* line 290, ../sass/responsive.scss */
-  h2,
-  h1,
-  .h1 {
-    font-size: 1.38em;
-  }
-
-  /* line 293, ../sass/responsive.scss */
-  .page {
-    padding: 0;
-  }
-  /* line 296, ../sass/responsive.scss */
-  .page .slider .views-field-field-image {
-    padding: 0 10px;
-  }
-
-  /* line 302, ../sass/responsive.scss */
-  #main-menu .navbar-header {
-    right: 0;
-    margin: 0;
-  }
-
-  /* slideshow */
-  /* line 308, ../sass/responsive.scss */
-  #slideshow_container {
-    width: 100% !important;
-  }
-
-  /* line 313, ../sass/responsive.scss */
-  #slideshow .container .jssorb05 {
-    bottom: 26px !important;
-  }
-  /* line 315, ../sass/responsive.scss */
-  #slideshow .container .jssorb05 div {
-    width: 26px !important;
-    height: 26px !important;
-  }
-  /* line 320, ../sass/responsive.scss */
-  #slideshow .container .views-field-title {
-    display: none;
-  }
-  /* line 324, ../sass/responsive.scss */
-  #slideshow .flex-caption {
-    font-size: 1.071em;
-  }
-
-  /* line 328, ../sass/responsive.scss */
-  .navbar-collapse.in {
-    overflow: visible;
-  }
-
-  /* sidebar */
-  /* line 333, ../sass/responsive.scss */
-  #header .search-block-form {
-    width: 190px;
-  }
-  /* line 336, ../sass/responsive.scss */
-  #header .search-block-form .form-item .form-search {
-    width: 83%;
-  }
-  /* line 340, ../sass/responsive.scss */
-  #header .search-block-form .button {
-    padding: 0;
-    width: 26px;
-  }
-
-  /* line 348, ../sass/responsive.scss */
-  #main .contact-message-feedback-form label {
-    display: block;
-  }
-  /* line 352, ../sass/responsive.scss */
-  #main .contact-message-feedback-form .form-text,
-  #main .contact-message-feedback-form .form-email {
-    width: 230px;
-  }
-.accordion-inner {
-  float: left;
-  width: 100%;
-  padding-top: 10px;
-}
-  /* footer */
-}
-  
 #block-footerright {
- text-align:left;
- margin-top: 25px;
+ text-align:right;
+ margin-top: 0px;
 }  
   #footer .block {
     float: none;
     width: 100%;
     margin-bottom: 10px;
   }
-#footer {
-  padding-bottom: 0px;
-}
+
   /* line 364, ../sass/responsive.scss */
   #footer .block p {
     margin: 0;
@@ -768,15 +591,196 @@ border-bottom:1px solid #34627c;
     margin-top: -27px;
   }
 }
+@media (max-width: 767px) {
+  
+#header .col-md-8 { position: absolute; padding:0; top:72px; left:0; width:100%; z-index:999999}
+#main-menu .menu {
+  float: left;
+  width:100%;
+  padding:0;
+  margin:0;
+ 
+}
 
+#main-menu .menu li {
+  float: left;
+  width:100%;
+}
+
+#main-menu .menu li a {
+  border-top: none;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  line-height: 100%;
+  text-align:right;
+  padding: 20px 15px;
+  background-color:#033c5a;
+  border:none;
+} 
+#main-menu:first-child li a
+{
+border-bottom:1px solid #34627c;
+}
+#main-menu .menu li a.is-active {
+  border-top: none;
+ 
+ 
+}
+#main-menu .menu li a:hover{ border:none; background-color:#1d506d;}  
+.navbar-toggle{ display:block;} 
+  
+.site-logo img {
+  margin-left:0;
+}
+
+#block-showteammembers-2 .tab-content { float:none; width:100%;}
+#block-showteammembers-2 .tabs-left > .nav-tabs { float:none; width:100%;}
+#block-showteammembers-2 .tab-pane img{ max-width:100%;}
+  
+#block-whoweare li { margin-bottom:32px;}
+  /* */
+  /*  */
+  /* line 12, ../sass/includes/_include.scss */
+  .box_shadow {
+    box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+  }
+
+  /* line 16, ../sass/includes/_include.scss */
+  .border_radius {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+
+  /* line 21, ../sass/includes/_include.scss */
+  .font_oswald {
+    font-family: 'oswaldregular';
+  }
+
+  /* BUTTON */
+  /* line 27, ../sass/includes/_include.scss */
+  .form-actions .form-submit {
+    margin: 0 10px 10px 0;
+    border: none;
+    padding: 8px 20px;
+    color: #fff;
+    background: #c01700;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+  }
+  /* line 36, ../sass/includes/_include.scss */
+  .form-actions .form-submit:hover, .form-actions .form-submit:focus {
+    background-color: #555555;
+  }
+
+  /* line 41, ../sass/includes/_include.scss */
+  .font_awesome {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+  }
+
+  /* line 290, ../sass/responsive.scss */
+  h2,
+  h1,
+  .h1 {
+    font-size: 1.38em;
+  }
+
+  /* line 293, ../sass/responsive.scss */
+  .page {
+    padding: 0;
+  }
+  /* line 296, ../sass/responsive.scss */
+  .page .slider .views-field-field-image {
+    padding: 0 10px;
+  }
+
+  /* line 302, ../sass/responsive.scss */
+  #main-menu .navbar-header {
+    right: 0;
+    margin: 0;
+  }
+
+  /* slideshow */
+  /* line 308, ../sass/responsive.scss */
+  #slideshow_container {
+    width: 100% !important;
+  }
+
+  /* line 313, ../sass/responsive.scss */
+  #slideshow .container .jssorb05 {
+    bottom: 26px !important;
+  }
+  /* line 315, ../sass/responsive.scss */
+  #slideshow .container .jssorb05 div {
+    width: 26px !important;
+    height: 26px !important;
+  }
+  /* line 320, ../sass/responsive.scss */
+  #slideshow .container .views-field-title {
+    display: none;
+  }
+  /* line 324, ../sass/responsive.scss */
+  #slideshow .flex-caption {
+    font-size: 1.071em;
+  }
+
+  /* line 328, ../sass/responsive.scss */
+  .navbar-collapse.in {
+    overflow: visible;
+  }
+
+  /* sidebar */
+  /* line 333, ../sass/responsive.scss */
+  #header .search-block-form {
+    width: 190px;
+  }
+  /* line 336, ../sass/responsive.scss */
+  #header .search-block-form .form-item .form-search {
+    width: 83%;
+  }
+  /* line 340, ../sass/responsive.scss */
+  #header .search-block-form .button {
+    padding: 0;
+    width: 26px;
+  }
+  /* line 348, ../sass/responsive.scss */
+  #main .contact-message-feedback-form label {
+    display: block;
+  }
+  /* line 352, ../sass/responsive.scss */
+  #main .contact-message-feedback-form .form-text,
+  #main .contact-message-feedback-form .form-email {
+    width: 230px;
+  }
+.accordion-inner {
+  float: left;
+  width: 100%;
+  padding-top: 10px;
+}
+#block-footerright {
+  margin-top: 25px;
+  text-align: left;
+}
+#slideshow .carousel-inner div:first-of-type {
+  height: 300px;
+}
+}/*End 767*/
 .navbar-toggle {
   background-color: transparent;
   bottom: 54px;
   height: 32px;
   position: absolute;
-  right: 19px;
+  right: 3px;
   top: -59px;
   width: 32px;
+  padding: 0px;
+  margin: 0px;
 }
 
 

@@ -6270,8 +6270,8 @@ button.close {
   border: solid 1px #c8c8c8;
 }
 
-#block-showteammembers-2 .tab-pane .col-md-3{ padding: 0;}
-#block-showteammembers-2 .tab-pane .col-md-9{ padding: 0 0 0 15px;}
+#block-showteammembers-2 .tab-pane .col-md-3{ /*padding: 0*/;}
+#block-showteammembers-2 .tab-pane .col-md-9{ /*padding: 0 0 0 15px;*/}
 
 #block-showteammembers-2 .nav-tabs li{ border:none; border-bottom: solid 1px #c8c8c8; }
 #block-showteammembers-2 .nav-tabs .active{ border:none; background:url(../../../images/arrow-right.png) right center no-repeat;}
@@ -9752,7 +9752,7 @@ display:none;
 }
 /*========================Custom CSS==============================*/
 .btn-btt {
-  display: none;
+  display: none !important;
 }
 .site-logo {
   margin: 12px 0px;
@@ -9852,11 +9852,14 @@ display:none;
 .tab-content p {
   font-size: 16px!important;
   font-weight: 300!important;
+  float: left;
 }
 .fa-times {
-  font-size: 35px;
+  font-size: 50px;
   color: #023c5b;
   margin-top: -9px;
+  right: 14px;
+  position: relative;
 }
 #main-menu .navbar-collapse {
   background: none;
@@ -9879,7 +9882,7 @@ display:none;
   margin: 10px 0px;
 }
 #block-showteammembers-2 li .accordion-heading.active {
-  background: url("../../../images/minus.png") no-repeat right top;
+  background: url("../../../images/minus.png") no-repeat right center;
   width: 100%;
   float: left;
 }
@@ -9894,7 +9897,7 @@ display:none;
 .path-user #block-zircon-content {
   max-width: 600px;
   width: 100%;
-  margin: 0 auto;
+  float: left;
   padding-top: 25px;
 }
 .user-login-form .description {
@@ -9922,9 +9925,44 @@ input[type="password"] {
 }
 #footer .text-formatted {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 17px;
 }
-
+#block-footerright p {
+  margin-bottom: 4px;
+}
+#block-footerright p a {
+  font-weight: 400;
+}
+#slideshow .carousel-inner div:first-of-type {
+  height: 575px;
+  background-position: center center !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  width: 100%;
+}
+.carousel-indicators {
+  z-index: 999999;
+}
+#block-views-block-team-members-block-mobile-block-1 {
+  display: none;
+}
+#block-tabs ul.tabs li:nth-child(2) {
+  display: none;
+}
+#block-tabs ul.tabs li a {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0px 0px ;
+}
+#block-tabs ul.tabs li a.is-active,
+#block-tabs ul.tabs li a:hover {
+  background: #023c5b;
+  border: 1px solid #023c5b;
+  color: #fff;
+}
+/*Responsive start*/
 @media (max-width: 1200px) {
 #footer .text-formatted {
     font-size: 14px;
@@ -9989,7 +10027,7 @@ input[type="password"] {
   #footer .fax-div {
     width: 100% !important;
   }
-}
+}/*767 End*/
 @media (min-width: 768px) {
   .form-inline .form-group {
     display: inline-block;
@@ -10035,6 +10073,43 @@ input[type="password"] {
   }
   .form-inline .has-feedback .form-control-feedback {
     top: 0;
+  }
+  #slideshow .carousel-inner div:first-of-type {
+  height: 475px;
+}
+}
+@media (max-width: 1024px) {
+  #block-showteammembers-2 .tab-content {
+    width: 664px;
+  }
+}
+@media (max-width: 1023px) {
+  #block-showteammembers-2 .tab-content {
+    width: 664px;
+  }
+  .tabcordion.accordion  {
+    display: none;
+  }
+  #block-views-block-team-members-block-mobile-block-1 {
+    display: block;
+  }
+  #block-views-block-team-members-block-mobile-block-1 .title {
+    border-top: 1px solid #f5f5f5;
+    padding: 8px 0px;
+    width: 100%;
+    color: #023d5b;
+    font-weight: bold;
+    background: url("../../../images/plus.png") no-repeat right center;
+  }
+    #block-views-block-team-members-block-mobile-block-1 .title.active {
+       background: url("../../../images/minus.png") no-repeat right center !important;
+    }
+  #block-views-block-team-members-block-mobile-block-1 .image {
+    width: 204px;
+  }
+  #block-views-block-team-members-block-mobile-block-1 .body {
+    width: 100%;
+    padding: 20px 0px;
   }
 }
 .form-horizontal .radio,
