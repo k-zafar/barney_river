@@ -10027,6 +10027,9 @@ input[type="password"] {
   #footer .fax-div {
     width: 100% !important;
   }
+  #footer .text-formatted {
+    font-size: 12px;
+  }
 }/*767 End*/
 @media (min-width: 768px) {
   .form-inline .form-group {
