@@ -51,7 +51,7 @@
     $('#block-views-block-team-members-block-mobile-block-1 .view-content .views-row').each(function(){
       var title = $(this).find('.title');
       title.click(function(){
-        title.parents('.views-row').toggleClass('active');
+        title.parents('.details').find('.icon').toggleClass('active');
         title.parents('.details').find('.group-footer').slideToggle();
       });
     });
