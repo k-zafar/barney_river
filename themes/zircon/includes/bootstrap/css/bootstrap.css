@@ -6273,7 +6273,7 @@ button.close {
 #block-showteammembers-2 .tab-pane .col-md-3{ /*padding: 0*/;}
 #block-showteammembers-2 .tab-pane .col-md-9{ /*padding: 0 0 0 15px;*/}
 
-#block-showteammembers-2 .nav-tabs li{ border:none; border-bottom: solid 1px #c8c8c8; }
+#block-showteammembers-2 .nav-tabs li{ border:none; border-bottom: solid 1px #c8c8c8; cursor: pointer; }
 #block-showteammembers-2 .nav-tabs .active{ border:none; background:url(../../../images/arrow-right.png) right center no-repeat;}
 #block-showteammembers-2 .nav-tabs li a span{ display:block; font-size:16px; font-weight:normal;}
 #block-showteammembers-2 .nav-tabs li a { color:#5d5d5d; font-size:20px; font-weight:400;}
@@ -6284,7 +6284,7 @@ button.close {
 border: none;
 border-bottom: solid 1px #c8c8c8;
 background-color: transparent !important;
-
+cursor: pointer;
 
 }
 
