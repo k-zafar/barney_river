@@ -43,6 +43,14 @@
     }
   };
   jQuery(document).ready(function(){
+    $('#block-views-block-team-members-block-mobile-block-1 .view-content .views-row .group-footer').hide();
+    $('#block-views-block-team-members-block-mobile-block-1 .view-content .views-row').each(function(){
+      var title = $(this).find('.title');
+      title.click(function(){
+        title.toggleClass('active');
+        title.parents('.details').find('.group-footer').slideToggle();
+      });
+    });
     if ($('#block-showteammembers-2 li').hasClass('active')) {
       $('#block-showteammembers-2 li').removeClass('remove');
     };
